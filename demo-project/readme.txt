@@ -5,6 +5,9 @@ How to Run:
 	If we want to run tests on CHROME browser, In conf/config.properties file, set browser_name=CHROME and do a mvn clean install 
 	
 	Note : Tests are run in test phase of maven build life cycle
+	Note : Right now, on running mvn clean install,we get build failure after test phase of maven build life cycle as 
+	few tests are getting failed. However our test execution is successfull . We can go and verify the reports for 
+	failed tests . Its only that few tests are getting failed due as actual behaviour is not matching expected behaviour
 
 Where to see test report:
 	html report => target\cucumber-reports\index.html

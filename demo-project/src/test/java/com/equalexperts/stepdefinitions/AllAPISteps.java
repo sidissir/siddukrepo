@@ -62,19 +62,19 @@ public class AllAPISteps {
 	//Assert that actual response code matches expected response code supplied from scenario
 	@Then("Response should have {int} status code")
 	public void response_should_have_status_code(Integer expectedResponseCode) {
-	    System.out.println("Response should have "+ expectedResponseCode +" status code");
+	    logger.info("Response should have "+ expectedResponseCode +" status code");
 	    Integer actualResponseCode = response.getStatusCode();
- 	    System.out.println("actualResponseCode :" + actualResponseCode );
-	    System.out.println("expectedResponseCode " + expectedResponseCode);
+ 	    logger.info("actualResponseCode :" + actualResponseCode );
+	    logger.info("expectedResponseCode " + expectedResponseCode);
 	    Assert.assertEquals(actualResponseCode, expectedResponseCode,"Actual and Expected Response codes are not matching.");
 	}
 	
 	//Assert that actual and expected response content types match
 	@Then("Respose should be of Json type")
 	public void respose_should_be_of_Json_type() {
-	    System.out.println("Respose should be of Json type");
-	    System.out.println(response.getContentType());
-	    System.out.println(ContentType.JSON);
+	    logger.info("Respose should be of Json type");
+	    logger.info(response.getContentType());
+	    logger.info(ContentType.JSON);
 	    Assert.assertTrue(response.getContentType().contains(ContentType.JSON.toString()),"Content types not matching");
 	}
 
