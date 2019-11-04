@@ -1,6 +1,6 @@
 1. 'Firstname' field doesn't have field length validation
 2. 'Firstname' field is allowing special characters 
-3. 'Firstname' field doesnt have empty field validation
+3. 'Firstname' field doesn't have empty field validation
 4. 'Surname' field doesn't have field length validation
 5. 'Surname' field is allowing special characters 
 6. 'Surname' field doesnt have empty field validation
@@ -13,4 +13,4 @@
 16. 'Checkout' field allowing to enter a date from past via date picker
 17. 'Checkout' field allowing to enter a date which is a pastdate to the date entered in 'checkin' date
 18. 'Checkout' field allowing to enter numeric data in text field which is not in 'YYYY-MM-DD' format
-19. When a lengthy string is entered in 'Firstname' and'Surname' fields is entered and created a new booking , data is getting overlapped
+19. When a lengthy string is entered in 'Firstname' and 'Surname' fields is entered and created a new booking , data is getting overlapped

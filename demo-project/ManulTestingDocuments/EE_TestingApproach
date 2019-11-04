@@ -33,11 +33,12 @@ Test Strategy:
 		1. Functionality Testing:
 
 			1.1 : Forms Testing
-				•	Test validations on each field
+				.	Test validations on each field
 				.	Test for field length validations
-				•	Test for the default values of fields
+				.	Test for the default values of fields
 				. 	Test date field validations
-
+				.	Test for Internationalization and CJK character input
+				
 			1.2 : Links Testing	
 				.	Test Outgoing links
 				.	Test Internal links
@@ -66,7 +67,12 @@ Test Strategy:
 				.	Test for easyness of navigation
 				.	Test for main menu and its consistency
 				
-			3.2	:	Contetnt Testing:
+			3.3 :  Keyboard-only accessibility testing 
+				.	Take hand of mouse and use keyboard only to navigate through the page	
+					.	Should be able to access each element
+					.	Tabbing should follow the same order as the page layout
+						
+			3.2	:	Content Testing:
 				.	Test for fonts
 				.	Test for colors .i.e no dark and annoying colors
 				.	Test for Spellings
@@ -82,6 +88,7 @@ Test Strategy:
 			5.1	:	Web performance testing:
 				. 	Test for page load time
 				.	Test application performance on different internet connection speeds
+				.	Test application performance when there are too many bookings on the page
 				
 			5.2	:	Web load testing 
 				.	Test if many users are accessing or requesting the same page. 
