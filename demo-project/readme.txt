@@ -6,8 +6,8 @@ How to Run:
 	
 	Note : Tests are run in test phase of maven build life cycle
 	Note : Right now, on running mvn clean install,we get build failure after test phase of maven build life cycle as 
-	few tests are getting failed. However our test execution is successfull . We can go and verify the reports for 
-	failed tests . Its only that few tests are getting failed due as actual behaviour is not matching expected behaviour
+	few tests are getting failed. However our test execution is successful . We can go and verify the reports for 
+	failed tests . Its only that few tests are getting failed as actual behavior is not matching expected behavior
 
 Where to see test report:
 	html report => target\cucumber-reports\index.html
