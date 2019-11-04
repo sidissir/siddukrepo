@@ -22,7 +22,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 @CucumberOptions(features = { "src/test/resources/functionalfeatures" }, glue = {
 		"com/equalexperts/stepdefinitions", }, plugin = { "pretty", "html:target/cucumber-reports/",
 				"json:target/cucumber-reports/cucumber.json" }, monochrome = true)
-public class TestNGRunner extends AbstractTestNGCucumberTests{/*
+public class TestNGRunner{
 	private TestNGCucumberRunner testNGCucumberRunner;
 	WebDriver webDriver;
 	Logger logger = Logger.getLogger(TestNGRunner.class.getName());
@@ -49,12 +49,12 @@ public class TestNGRunner extends AbstractTestNGCucumberTests{/*
 		testNGCucumberRunner.runScenario(pickleWrapper.getPickleEvent());
 	}
 
-	*//**
+	/**
 	 * Returns two dimensional array of PickleEventWrapper scenarios with their
 	 * associated CucumberFeatureWrapper feature.
 	 *
 	 * @return a two dimensional array of scenarios features.
-	 *//*
+	 */
 	@DataProvider
 	public Object[][] scenarios() {
 		if (testNGCucumberRunner == null) {
@@ -70,4 +70,4 @@ public class TestNGRunner extends AbstractTestNGCucumberTests{/*
 		}
 		testNGCucumberRunner.finish();
 	}
-*/}
+}
